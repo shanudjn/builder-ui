@@ -1,0 +1,55 @@
+.card{
+    max-width: 200px; 
+    margin: 0.5rem;
+    background-color: var(--white);        
+}
+.card:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-image{
+    width: 100%;    
+}
+.card-content{
+    padding: 0.5rem;
+
+}
+.card-header{
+    font-weight: bold;
+    font-size: 1rem;
+    margin : 0.5rem 0 0 0;
+}
+.card-text{
+    font-size: 0.8rem;
+    margin : 0.5rem 0 0.5rem 0;  
+
+}
+.card-badge{
+    position: relative;
+}
+.card-badge-item{
+    position : absolute;
+    right:-10px;     
+}
+.cancel-svg{
+    position : absolute;
+    right:5px;
+    top : 5px; 
+    border-radius:4px;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    font-size: 10px;
+    background-color: var(--primary-color);
+    cursor: pointer;
+
+
+}
+.cancel-svg:hover{
+    opacity: 1;
+}
+.text-card{
+    max-width: 300px;
+}
+.text-card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+}

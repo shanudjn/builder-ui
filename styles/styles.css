@@ -1,0 +1,161 @@
+/*layout*/
+body{
+    margin: 0;
+    /* position: relative; */
+}
+.brand-name{
+    font-size:1.2rem;
+   
+}
+.nav{
+    grid-area : nav;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-items: baseline;
+    border-bottom: 1px solid var(--border-color); 
+}
+.navbar-brand{
+    display: flex;
+    flex-direction: row;
+}
+.navbar-links{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.navbar-links-list{
+    display: flex;
+    list-style: none;
+           
+}
+
+.navbar-links-list-item {
+    display: flex;
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.navbar-links-list-item a{
+    text-decoration: none;
+    color: black;
+    
+}
+.navbar-links-list-item a:hover{
+    color: var(--primary-color);
+    cursor:pointer
+}
+.hero-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+    margin-left: 300px;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+
+}
+
+/*
+**/
+.aside{
+    grid-area: aside;
+    /* border:1px solid red; */
+    padding:1rem;
+    border-right:1px solid var(--border-color);
+    /* position: sticky;
+    left:0;
+    top: 0; */
+}
+.aside li{
+    list-style: none;
+    /* border:1px solid red; */
+    margin:0.5rem;
+    padding:0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.aside-list-item a{
+    color:black;
+    text-decoration: none;
+}
+
+.aside ul{
+    /* border:1px solid black; */
+    padding: 0;
+}
+.aside a{
+    color: none;
+}
+.aside li:hover{
+    background-color: #ECFDF5;
+}
+
+.doc{
+    grid-area : doc;
+    /* border:1px solid yellow; */
+    padding:1rem;
+    max-width: 600px;
+
+}
+
+.div-example .heading {
+    color: black;
+}
+
+.div-example, .code-snippet{
+    background-color: #F9FAFB;
+    padding: 0.5rem;
+    /* max-width: 600px; */
+    /* max-width: 700px; */
+}
+
+.div-card{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+footer{
+    grid-area:footer;
+    /* border:1px solid black; */
+}
+body{
+    display:grid;
+    grid-template-areas: 
+    "nav nav nav"
+    "aside doc doc"
+    "footer footer footer";
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    
+}
+
+.footer a{
+    color : black;
+    color: var(--white);
+    
+}
+
+@media only screen and (max-width: 768px){
+    .aside{
+        display: none;
+    }
+    .div-example, .code-snippet{
+        margin: auto;
+    }
+    .hero-container{
+        margin-left: 0;
+    }
+
+}

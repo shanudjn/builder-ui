@@ -1,0 +1,21 @@
+.grid-container-2{
+    max-width: 800px;
+    border:1px solid var(--border-color)
+    
+}
+.grid-container-3{
+    max-width: 800px;
+    border:1px solid var(--border-color)
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   
+}
+.col{
+    margin:0.5rem;
+    padding: 0.5rem;   
+}

@@ -1,0 +1,9 @@
+.small-text{
+    font-size: 12px;
+}
+.grey-text{
+    color:var(--grey-text-color)
+}
+.heading{
+    color:black;
+}

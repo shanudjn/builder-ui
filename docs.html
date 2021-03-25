@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👷Builder UI👷</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/components/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="navbar-brand">
+            <h2 class="brand-name">👷BuilderUI👷</h2>
+        </div>
+        <div class="navbar-links">
+            <ul class="navbar-links-list">
+                <li class="navbar-links-list-item"><a href="/">Home</a></li>
+                <li class="navbar-links-list-item"><a href="/docs.html">Docs</a></li>
+                <li class="navbar-links-list-item"><a href="https://github.com/shanudjn/BuilderUI">Github</a></li>
+            </ul>
+        </div>
+    </nav>
+    <aside class="aside">
+
+        <ul>
+            <li class="aside-list-item"><a href="#installation"><b>Installation</b></a></li>
+
+            <li class="aside-list-item"><a href="#alert">Alert</a></li>
+            <li class="aside-list-item"><a href="#avatar">Avatar</a></li>
+            <li class="aside-list-item"><a href="#badge">Badge</a></li>
+            <li class="aside-list-item"><a href="#cards">Cards</a></li>
+            <li class="aside-list-item"><a href="#grids">Grids</a></li>
+            <li class="aside-list-item"><a href="#input">Input</a></li>
+            <li class="aside-list-item"><a href="#list">Lists</a></li>
+            <li class="aside-list-item"><a href="#navigation">Navigation</a></li>
+            <li class="aside-list-item"><a href="#ratings">Ratings</a></li>
+            <li class="aside-list-item"><a href="#text">Text</a></li>
+        </ul>
+    </aside>
+    <div class="doc">
+        <!--Installation-->
+        <h2 id="installation">Getting Started</h2>
+        <div class="code-snippet">
+            <pre>
+                <code>
+//link to the stylesheet by adding the following line
+
+&ltlink rel="stylesheet"
+ href="https://builder-ui-css.netlify.app/styles/components/styles.css"&gt
+                </code>
+            </pre>
+        </div>
+        <!--Alert-->
+        <h2>Alert</h2>
+        <p class="paragraph-text">Documentation and Examples on BuilderUI Alerts</p>
+        <h4>Examples</h4>
+        <div class="div-example">
+            <div>
+                <p class="alert alert-error">
+                    There was an error processing your request
+                </p>
+                <p class="alert alert-success">
+                    Data uploaded to server. Fire on!
+                </p>
+                <p class="alert alert-warning">
+
+                    There's something wrong. Could you please check again.
+                </p>
+                <p class="alert alert-info">
+
+                    There's something wrong. Could you please check again.
+                </p>
+            </div>
+        </div>
+        <h4>Code Examples</h4>
+        <div class="code-snippet">
+            <pre><code class="language-html">
+        &ltp class="alert alert-error"&gt
+            There was an error processing your request
+        &lt/p&gt
+        &ltp class="alert alert-success"&gt
+            Data uploaded to server. Fire on!
+        &lt/p&gt
+        &ltp class="alert alert-warning"&gt
+            There's something wrong. Could you please check again.
+        &lt/p&gt
+        &ltp class="alert alert-info"&gt
+            There's something wrong. Could you please check again.
+        &lt/p&gt
+            </p></p></code></pre>
+        </div>
+
+        <!--Avatar-->
+
+        <h2 id="avatar">Avatar</h2>
+        <p class="paragraph-text">Documentation and Examples on BuilderUI Alerts</p>
+        <h4>Examples</h4>
+        <div class="div-example">
+            <img class="avatar" src="https://via.placeholder.com/50">
+            <img class="avatar-small" src="https://via.placeholder.com/50">
+        </div>
+        <h4>Code Snippet</h4>
+        <div class="code-snippet">
+            <pre>
+                <code>
+        &ltimg class="avatar" src="https://via.placeholder.com/50&gt
+        &ltimg class="avatar-small" src="https://via.placeholder.com/50"&gt
+                </code>
+            </pre>
+        </div>
+
+        <!--Badge-->
+        <h2 id="badge">Badge</h2>
+        <h4>Examples</h4>
+        <div class="div-example">
+            <span class="badge badge-default">default</span>
+            <span class="badge badge-success">success</span>
+            <span class="badge badge-error">error</span>
+            <span class="badge badge-new">default</span>
+            <span class="badge badge-notification">5</span>
+
+            <h4>
+                Badge on Icons/Avatars
+            </h4>
+            <button class="icon-button">
+                <span class="material-icons">
+                    notifications
+                </span>
+                <span class="badge-notification2">25</span>
+            </button>
+
+        </div>
+        <h4>Code Snippet</h4>
+        <div class="code-snippet">
+            <pre>
+                <code>
+            &ltspan class="badge badge-default"&gtdefault&lt/span&gt
+            &ltspan class="badge badge-success"&gtsuccess&lt/span&gt
+            &ltspan class="badge badge-error"&gterror&lt/span&gt
+            &ltspan class="badge badge-new"&gtdefault&lt/span&gt
+            &ltspan class="badge badge-notification"&gt5&lt/span&gt
+            &ltbutton class="icon-button"&gt
+            &ltspan class="material-icons"&gt
+                notifications
+            &lt/span&gt
+            &ltspan class="badge-notification2"&gt25&lt/span&gt
+            &lt/button&gt
+                </code>
+            </pre>
+        </div>
+
+        <!--Button-->
+        <h2 id="button">Button</h2>
+        <h4>Examples</h4>
+        <div class="div-example">
+            <button class="btn btn-primary">Button</button>
+            <button class="btn btn-secondary">Button</button>
+            <button class="btn btn-ghost">Button</button>
+            <button class="btn btn-primary btn-icon">
+                <span class="material-icons">
+                    mail
+                </span>
+                <span>Email</span>
+            </button>
+            <button class="btn btn-secondary btn-icon">
+                <span class="material-icons">
+                    call
+                </span>
+                <span>Call Us</span>
+            </button>
+        </div>
+        <h4>Code Snippet</h4>
+
+        <div class="code-snippet">
+            <pre>
+                <code>
+            &ltbutton class="btn btn-primary"&gtButton&lt/button&gt
+            &ltbutton class="btn btn-secondary"&gtButton&lt/button&gt
+            &ltbutton class="btn btn-ghost"&gtButton&lt/button&gt
+            
+            &ltbutton class="btn btn-primary btn-icon"&gt
+            &ltspan class="material-icons"&gt
+                mail
+            &lt/span&gt            
+            &ltspan&gtEmail&lt/span&gt            
+            &lt/button&gt
+
+            &ltbutton class="btn btn-secondary btn-icon"&gt
+            &ltspan class="material-icons"&gt
+                call
+            &lt/span&gt
+            &ltspan&gtCall Us&lt/span&gt
+            &lt/button&gt
+                </code>
+            </pre>
+        </div>
+
+
+        <!--Cards-->
+        <h2 id="cards">Cards</h2>
+        <h4>Examples</h4>
+        <div class="div-example div-card">
+            <div class="card">
+                <img class="card-image" src="https://picsum.photos/id/237/200/200" alt="image">
+                <div class="card-content">
+                    <h2 class="card-header">Lizard</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio arciandae iusto
+                        debitis illo, rem
+                        fugit,
+                        temporibus labore.</p>
+                    <button class="btn btn-primary">Show More</button>
+                </div>
+            </div>
+
+
+            <div class="card card-badge">
+
+                <img class="card-image" src="https://picsum.photos/id/237/200/200" alt="image">
+                <span class="badge badge-success card-badge-item">Most Liked</span>
+                <div class="card-content">
+                    <h2 class="card-header">Lizard</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio arciandae iusto
+                        debitis illo, rem
+                        fugit,
+                        temporibus labore.</p>
+                    <button class="btn btn-primary">Show More</button>
+                </div>
+            </div>
+            <div class="card card-badge">
+                <img class="card-image" src="https://picsum.photos/id/237/200/200" alt="image">
+                <span class="material-icons cancel-svg">
+                    clear
+                </span>
+
+                <div class="card-content">
+                    <h2 class="card-header">Lizard</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio arciandae iusto
+                        debitis illo, rem
+                        fugit,
+                        temporibus labore.</p>
+                    <button class="btn btn-primary">Show More</button>
+                </div>
+            </div>
+        </div>
+        <h4>Code Snippet</h4>
+        <div class="code-snippet div-card-snippet">
+            <pre><code>
+&ltdiv class="card"&gt
+    &ltimg class="card-image" src="https://picsum.photos/id/237/200/200" alt="image"&gt
+        &ltdiv class="card-content"&gt
+            &lth2 class="card-header"&gtLizard&lt/h2&gt
+            &ltp class="card-text"&gtLorem ipsum dolor sit amet, consectetur adipisicing
+            debitis illo, rem
+            fugit,
+            temporibus labore.&lt/p&gt
+        &ltbutton class="btn btn-primary"&gtShow More&lt/button&gt
+    &lt/div&gt
+&lt/div&gt
+
+
+&ltdiv class="card card-badge"&gt
+    &ltimg class="card-image" src="https://picsum.photos/id/237/200/200" alt="image"&gt
+    &ltspan class="badge badge-success card-badge-item"&gtMost Liked&lt/span&gt
+        &ltdiv class="card-content"&gt
+            &lth2 class="card-header"&gtLizard&lt/h2&gt
+            &ltp class="card-text"&gtLorem ipsum dolor sit amet, consectetur adipisicing
+            debitis illo, rem
+            fugit,
+            temporibus labore.&lt/p&gt
+    &ltbutton class="btn btn-primary"&gtShow More&lt/button&gt
+    &lt/div&gt
+&lt/div&gt
+
+
+&ltdiv class="card card-badge"&gt
+    &ltimg class="card-image" src="https://picsum.photos/id/237/200/200" alt="image"&gt
+    &ltspan class="material-icons cancel-svg"&gt
+    clear
+    &lt/span&gt
+    &ltdiv class="card-content"&gt
+        &lth2 class="card-header"&gtLizard&lt/h2&gt
+        &ltp class="card-text"&gtLorem ipsum dolor sit amet, consectetur adipisicing 
+        debitis illo, rem
+        fugit,
+        temporibus labore.&lt/p&gt
+        &ltbutton class="btn btn-primary"&gtShow More&lt/button&gt
+    &lt/div&gt
+&lt/div&gt
+            </code></pre>
+        </div>
+
+        <!--Grids-->
+        <h2 id="grids">Grids</h2>
+        <h4>Examples</h4>
+        <div class="div-example">
+            <p>Two Items in a grid</p>
+            <div class="grid-container-2">
+                <div class="row">
+                    <div class="col">1 of 2</div>
+                    <div class="col">2 of 2</div>
+                </div>
+            </div>
+            <p>Three Items in a grid</p>
+            <div class="grid-container-3">
+                <div class="row">
+                    <div class="col">1 of 3</div>
+                    <div class="col">2 of 3</div>
+                    <div class="col">3 of 3</div>
+                </div>
+            </div>
+        </div>
+        <h4>Code Snippets</h4>
+        <div class="code-snippet">
+            <pre>
+                <code>
+        &ltdiv class="grid-container-2"&gt
+            &ltdiv class="row"&gt
+                &ltdiv class="col"&gt1 of 2&lt/div&gt
+                &ltdiv class="col"&gt2 of 2&lt/div&gt
+            &lt/div&gt
+        &lt/div&gt
+        &ltdiv class="grid-container-3"&gt
+            &ltdiv class="row"&gt
+                &ltdiv class="col"&gt1 of 3&lt/div&gt
+                &ltdiv class="col"&gt2 of 3&lt/div&gt
+                &ltdiv class="col"&gt3 of 3&lt/div&gt   
+            &lt/div&gt
+        &lt/div&gt
+                </code>
+            </pre>
+        </div>
+        <!--Input-->
+        <h2 id="input">Inputs</h2>
+        <div class="div-example">
+            <div class="input">
+                <input type="text" class="field" placeholder="Name">
+            </div>
+            <div class="input">
+                <input type="text" class="field" placeholder="Email">
+            </div>
+        </div>
+
+        <h4>Code Snippets</h4>
+        <div class="code-snippet">
+            <pre>
+               <code>
+                &ltdiv class="input"&gt
+                    &ltinput type="text" class="field" placeholder="Name"&gt
+                &lt/div&gt
+                &ltdiv class="input"&gt
+                    &ltinput type="text" class="field" placeholder="Email"&gt
+                &lt/div&gt
+               </code>
+           </pre>
+        </div>
+        <!--Lists-->
+        <h2 id="list">Lists</h2>
+        <h4>Example</h4>
+        <div class="div-example div-lists">
+            <p>Stacked List</p>
+            <div>
+
+                <ul class="stacked-list">
+                    <li class="list-item">One</li>
+                    <li class="list-item">Two</li>
+                    <li class="list-item">Three</li>
+                    <li class="list-item">Four</li>
+                    <li class="list-item">Five</li>
+                </ul>
+            </div>
+            <p>Spaced List</p>
+
+            <div>
+                <ul class="spaced-list">
+                    <li class="list-item spaced">One</li>
+                    <li class="list-item spaced">Two</li>
+                    <li class="list-item spaced">Three</li>
+                    <li class="list-item spaced">Four</li>
+                    <li class="list-item spaced">Five</li>
+                </ul>
+            </div>
+        </div>
+        <h4>Code Snippet</h4>
+        <div class="code-snippet">
+            <pre>
+                <code>
+        &ltul class="stacked-list"&gt
+            &ltli class="list-item"&gtOne&lt/li&gt
+            &ltli class="list-item"&gtTwo&lt/li&gt
+            &ltli class="list-item"&gtThree&lt/li&gt
+            &ltli class="list-item"&gtFour&lt/li&gt
+            &ltli class="list-item"&gtFive&lt/li&gt
+        &lt/ul&gt
+
+
+
+        &ltul class="spaced-list"&gt
+            &ltli class="list-item spaced"&gtOne&lt/li&gt
+            &ltli class="list-item spaced"&gtTwo&lt/li&gt
+            &ltli class="list-item spaced"&gtThree&lt/li&gt
+            &ltli class="list-item spaced"&gtFour&lt/li&gt
+            &ltli class="list-item spaced"&gtFive&lt/li&gt
+        &lt/ul&gt
+                </code>
+            </pre>
+        </div>
+
+        <!--Navigation-->
+        <h2 id="navigation">Navigation</h2>
+        <h4>Examples</h4>
+        <div class="div-example">
+            <nav class="navigation">
+                <div class="title-section">
+                    <h4>Brand Name</h4>
+                </div>
+                <div class="links-section">
+                    <ul class="links-list">
+                        <li class="links-list-item"><a href="#">Link 1</a></li>
+                        <li class="links-list-item"><a href="#">Link 2</a></li>
+                        <li class="links-list-item"><a href="#">Link 3</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <h4>Code Snippet</h4>
+        <div class="code-snippet">
+            <pre>
+                <code>
+        &ltnav class="navigation"&gt
+            &ltdiv class="title-section"&gt
+                &lth4&gtBrand Name&lt/h4&gt
+            &lt/div&gt
+            &ltdiv class="links-section"&gt
+                &ltul class="links-list"&gt
+                    &ltli class="links-list-item"&gt&lta href="#"&gtLink 1&lt/a&gt&lt/li&gt
+                    &ltli class="links-list-item"&gt&lta href="#"&gtLink 2&lt/a&gt&lt/li&gt
+                    &ltli class="links-list-item"&gt&lta href="#"&gtLink 3&lt/a&gt&lt/li&gt
+                &lt/ul&gt
+            &lt/div&gt
+        &lt/nav&gt
+                </code>
+            </pre>
+        </div>
+        <!--Ratings-->
+        <h2 id="ratings">Ratings</h2>
+        <h4>Example</h4>
+        <div class="div-example">
+
+            <span class="material-icons rating-stars">
+                grade
+            </span>
+
+            <span class="material-icons rating-stars">
+                grade
+            </span>
+            <span class="material-icons rating-stars">
+                grade
+            </span>
+            <span class="material-icons rating-stars">
+                grade
+            </span>
+            <span class="material-icons rating-stars">
+                grade
+            </span>
+        </div>
+        <h4>Code Snippet</h4>
+        <div class="code-snippet">
+            <pre>
+                <code>
+            &ltspan class="material-icons rating-stars"&gt
+                grade
+            &lt/span&gt
+
+            &ltspan class="material-icons rating-stars"&gt
+                grade
+            &lt/span&gt
+            &ltspan class="material-icons rating-stars"&gt
+                grade
+            &lt/span&gt
+            &ltspan class="material-icons rating-stars"&gt
+                grade
+            &lt/span&gt
+            &ltspan class="material-icons rating-stars"&gt
+                grade
+            &lt/span&gt
+                </code>
+            </pre>
+        </div>
+
+        <!--Text-->
+        <h2 id="text">Text</h2>
+        <h4>Example</h4>
+        <div class="div-example">
+            <h1 class="heading">Heading 1</h1>
+            <h2 class="heading">Heading 2</h2>
+            <h3 class="heading">Heading 3</h3>
+            <h4 class="heading">Heading 4</h4>
+            <h5 class="heading">Heading 5</h5>
+            <h6 class="heading">Heading 6</h6>
+
+
+            <h3>Small Text</h3>
+            <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, maxime,
+                praesentium
+                quas
+                esse, fugit vel
+                velit aperiam explicabo ad ipsa adipisci? Voluptatum dolorem quod cum omnis, voluptates autem
+                numquam
+                consequatur?
+            </p>
+        </div>
+        <h4>Code Snippet</h4>
+        <div class="code-snippet">
+            <pre>
+                <code>
+        &lth1 class="heading"&gtHeading 1&lt/h1&gt
+        &lth2 class="heading"&gtHeading 2&lt/h2&gt
+        &lth3 class="heading"&gtHeading 3&lt/h3&gt
+        &lth4 class="heading"&gtHeading 4&lt/h4&gt
+        &lth5 class="heading"&gtHeading 5&lt/h5&gt
+        &lth6 class="heading"&gtHeading 6&lt/h6&gt
+
+
+        &lth3&gtSmall Text&lt/h3&gt
+        &ltp class="small-text"&gtLorem ipsum dolor sit amet consectetur adipisicing eli
+        praesentium
+        quas
+        esse, fugit vel
+        velit aperiam explicabo ad ipsa adipisci? Voluptatum dolorem quod cum 
+        numquam
+        consequatur?
+        &lt/p&gt
+                </code>
+            </pre>
+        </div>
+
+
+
+
+    </div>
+    <footer class="footer">
+        <p>This Component Library is Made by <a href="https://twitter.com/shahazad__">Shahazad</a></p>
+    </footer>
+</body>
+
+</html>

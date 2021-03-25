@@ -1,0 +1,50 @@
+:root{
+    --error-svg-fill : #E53E3E;
+    --success-svg-fill:#38A169;
+    --warning-svg-fill:#DD6B20;
+    --info-svg-fill:#3182CE;
+    --error-background-color : #FED7D7;  
+    --info-background-color:#BEE3F8;
+    --success-background-color : #C6F6D5;  
+    --warning-background-color:#FEEBC8;
+}
+/*common css for all the alerts*/
+.alert{
+    display: flex;
+    max-width: 600px;
+    margin:1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+svg{
+    margin-right: 10px;   
+}
+/*error alert background*/
+.alert-error{   
+    background-color:var(--error-background-color)
+}
+.svg-error{
+    fill: var(--error-svg-fill);
+}
+/*error success background*/
+.alert-success{
+    background-color: var(--success-background-color);
+}
+.svg-success{
+    fill: var(--success-svg-fill) ;
+}
+/*alert warning backgorund*/
+.alert-warning{
+background-color:var(--warning-background-color) ;
+}
+.svg-warning{
+fill: var(--warning-svg-fill);
+}
+/*alert info background*/
+.alert-info{
+background-color: var(--info-background-color) ;
+}
+.svg-info{
+fill: var(--info-svg-fill);
+}
