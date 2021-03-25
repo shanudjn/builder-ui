@@ -1,0 +1,32 @@
+.navigation{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* border:1px solid black; */
+}
+.links-section{
+    /* margin:1rem; */
+    /* padding:1rem; */
+}
+.title-section{
+    align-self: center;
+    padding-left: 1rem;
+}
+.links-list{
+    display:flex;
+    flex-direction :row;
+}
+.links-list-item{
+    list-style: none;
+    margin: 0.5rem;
+    font-size: 12px;
+}
+.links-list-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.links-list-item a:hover{
+    color: var(--primary-color)
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+@import url("avatar.css");
+@import url("alert.css");
+@import url("badge.css");
+@import url("button.css");
+@import url("cards.css");
+@import url("input.css");
+@import url("lists.css");
+@import url("ratings.css");
+@import url("grid.css");
+@import url("text.css");
+@import url("navigation.css");
+
+
+
+
+
+:root{
+    /**badge
+    */
+    --default-badge-background-color : #ffffff;
+    --success-badge-background-color : #09D3AC;
+    --new-badge-background-color:#A0AEC0;
+    --error-badge-background-color :#FED7D7;
+    --notification-badge-background-color : #1DA1F2;
+    --success-font-color : #ffffff;
+    --error-font-color:#822727;
+    --new-font-color:#44337A;
+    
+    /*
+    button
+    **/
+    --white-color : #ffffff;
+    --btn-primary-color:#09D3AC;
+    --btn-secondary-color : #ffffff;
+    --white : #ffffff;
+
+    --primary-color : #09D3AC;
+    --secondary-color : #F5F3FF;
+    --border-color : #E5E7EB;
+
+    --grey-text-color : #d3d3d3;
+
+    }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    margin:1rem;
+    padding:1rem;
+}

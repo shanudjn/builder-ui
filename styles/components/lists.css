@@ -1,0 +1,17 @@
+.stacked-list{
+   max-width: 300px;
+}
+.list-item{
+    list-style: none;
+    border: 1px solid #d3d3d3;    
+    padding:1rem;  
+}
+.list-item:hover{
+    background-color: var(--secondary-color);
+}
+.spaced-list{
+    max-width: 300px;
+}
+.spaced{
+    margin:0.5rem;
+}
